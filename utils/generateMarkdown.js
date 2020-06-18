@@ -13,7 +13,7 @@ const generateMarkdown = (answers) => {
     # Description ${answers.Discription};
     # Installation process ${answers.Installation};
     # Usage ${answers.Usage};
-    ${badgeUrl};
+    ${badgeUrl}
     # Contributing ${answers.Contributing};
     # Tests ${answers.Tests}
     
