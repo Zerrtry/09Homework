@@ -9,14 +9,13 @@ const generateMarkdown = (answers) => {
       badgeUrl = '[![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)'
     }
     let readMeString = `
-    # Title ${answers.Titile};
-    # Description ${answers.Discription};
-    # Installation process ${answers.Installation};
-    # Usage ${answers.Usage};
+    # Title ${answers.Titile}
+    # Description ${answers.Discription}
+    # Installation process ${answers.Installation}
+    # Usage ${answers.Usage}
     ${badgeUrl}
-    # Contributing ${answers.Contributing};
+    # Contributing ${answers.Contributing}
     # Tests ${answers.Tests}
-    
     `
     fs.writeFile('readMe.md',readMeString, (err) => {
       if (err) throw err;
